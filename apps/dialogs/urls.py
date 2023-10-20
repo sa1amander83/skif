@@ -3,10 +3,13 @@ from django.contrib.auth import views as standart_views
 
 from . import views
 
-app_name = 'registration'
+app_name = 'dialogs'
 urlpatterns = [
-    # path('', views.index, name = 'index'),
-    # path('login/', standart_views.LoginView.as_view(), name='login'),
-    # path('logout/', standart_views.LogoutView.as_view(), name='logout'),
-    # path('registration/', views.register, name = 'register'),
+    # path('dialog/<str:username>/', views.dialog, name = 'dialog'),
+    # path('dialog/<str:reciever_name>/leave_message/', views.leave_message, name = 'leave_message'),
+    # path('messages/', views.messages, name = 'messages'),
+    # path('post<str:username>/', views.post, name = 'post'),
+    # path('new_messages/', views.new_messages, name = 'new_messages'),
+    # path('message<int:message_id>/delete/', views.delete_message, name = 'delete_message'),
+    # path('dialog<int:companion_id>/delete/', views.delete_dialog, name = 'delete_dialog'),
     ]
